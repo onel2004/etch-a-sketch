@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Etch a Sketch</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Etch a Sketch</h1>
+        <div class="control">
+          <input type="button" value="Clear" id="clear" />
+          <input type="button" value="Erase" id="erase" />
+          <input type="button" value="Black" id="black" />
+          <input type="button" value="Random" id="random" />
+          <div id="form">
+            <input
+              id="square"
+              type="number"
+              name="subdivision"
+              min="16"
+              max="100"
+            />
+            <button id="submit">Set a value</button>
+          </div>
+        </div>
+      </header>
+
+      <section id="board"></section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
